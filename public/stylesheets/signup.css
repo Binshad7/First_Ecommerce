@@ -1,0 +1,26 @@
+#cont{
+    margin-left: 29%;
+    margin-top: 95px;
+    background-color: #0fc4bc21;
+    width: 610px;
+    height: 380px;
+    padding-left: 120px;
+    border-radius: 35px;
+    
+  }
+  #wid {
+    width: 75%;
+  }
+  #txt {
+    
+    text-align: center;
+    margin-top: 30px;
+    font-family: initial;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  #btn {
+        margin-left: 107px;
+        margin-top: 5px;
+        
+  }

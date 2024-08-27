@@ -1,0 +1,22 @@
+<head>
+  <link rel="stylesheet" href="/stylesheets/login.css" type="text/css" />
+</head>
+
+<div class="container" id="cont">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 id="log">Login</h2>
+      <form action="/login" method="post" class="form">
+        {{#if loginErr}}
+        <p class="err" style="color: red;">{{loginErr}}</p>
+        {{/if}}
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email" class="form-control" />
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="pass" name="password" placeholder="Password" />
+        <a href="/signup" id="ca">Create account ?</a>
+        <button id="btn" type="submit" class="btn btn-success">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+</div>

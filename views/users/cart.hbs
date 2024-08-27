@@ -1,0 +1,48 @@
+<section>
+    <div class="container">
+        <div class="col-md-6">
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each userCart }}
+                <tr>
+                  
+                <td>
+                    <img src="/product-images/{{this.product._id }}.jpg" style="width: 70px;height: 70px;"  alt="">
+                    </td>
+                 <td>{{this.product.Name}}</td>
+                
+                
+                <td>{{this.product.Price}}</td>
+               
+                <td>
+                    
+                            <button type="button" class="btn-info mr-6" onclick=" changeQuantity('{{this._id}}','{{this.product._id}}','{{../user._id }}',-1)"> - </button>
+                            
+                            <span id="{{this.product._id}}" >{{this.quantity}}</span> 
+                              <button type="button" class="btn-info ml-6" onclick="changeQuantity('{{this._id}}','{{this.product._id}}','{{../user._id }}',1)"> +</button>
+                </td>
+                <td>
+                    <a onclick="productRemoveCart('{{this._id}}','{{this.product._id}}')" class="btn btn-danger" >Remove</a>
+                </td>
+                </tr>
+                {{/each }}
+            </tbody>
+        </table>
+        
+        <hr>
+        <h3 style="float: right; margin-right: 130px;" class="float-right"> Total: Rs.<span id="total">{{totalValue}}</span></h3>
+        <br>
+        <a href="/placeOrder" class="btn btn-success  " style="margin-right: 130px; margin-top: 6px; width: 158px; margin-left: 1000px; ">Place Oder</a>
+        </div>
+    </div>
+</section>
+ 
+ 

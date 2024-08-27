@@ -1,0 +1,35 @@
+#log{
+  text-align: center;
+  margin-top: 30px;
+  font-family: initial;
+  font-weight: bold;
+  font-size: 40px;
+}
+#cont{
+  margin-left: 29%;
+  margin-top: 95px;
+  background-color: #0fc4bc21;
+  width: 580px;
+  height: 310px;
+  padding-left: 160px;
+  border-radius: 35px;
+  
+}
+#pass {
+  width: 290px;
+}
+#email {
+  width: 290px;
+}
+#pas {
+  margin-top: 15px;
+}
+#ca {
+ 
+  margin-left: 2px;
+  text-decoration: none;
+}
+#btn {
+  margin-left: 208px;
+  margin-top: -21px;
+}
